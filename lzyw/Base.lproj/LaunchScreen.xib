@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launcher_bg" translatesAutoresizingMaskIntoConstraints="NO" id="62r-Qj-WFD">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="launcher_text" translatesAutoresizingMaskIntoConstraints="NO" id="4oT-R3-sS1">
+                    <rect key="frame" x="120" y="82" width="240" height="128"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="launcher_pname" translatesAutoresizingMaskIntoConstraints="NO" id="Rlq-Qm-XwA">
+                    <rect key="frame" x="157" y="372" width="167" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="2yu-nI-Pss"/>
+                    </constraints>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="191" y="398" width="100" height="72"/>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="62r-Qj-WFD" secondAttribute="bottom" id="4ID-Ls-nEE"/>
+                <constraint firstAttribute="trailing" secondItem="62r-Qj-WFD" secondAttribute="trailing" id="B5a-95-lUZ"/>
+                <constraint firstAttribute="centerX" secondItem="4oT-R3-sS1" secondAttribute="centerX" id="BFC-1R-8kp"/>
+                <constraint firstAttribute="centerY" secondItem="4oT-R3-sS1" secondAttribute="centerY" id="Fri-Sp-OhI"/>
+                <constraint firstItem="62r-Qj-WFD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="G0q-Rf-plu"/>
+                <constraint firstItem="62r-Qj-WFD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="H9d-3C-TJo"/>
+                <constraint firstAttribute="centerX" secondItem="Rlq-Qm-XwA" secondAttribute="centerX" id="MDO-OL-fSL"/>
+                <constraint firstAttribute="trailing" secondItem="4oT-R3-sS1" secondAttribute="trailing" constant="50" id="jJg-ym-mQp"/>
+                <constraint firstAttribute="centerX" secondItem="4oT-R3-sS1" secondAttribute="centerX" id="mmN-64-8OY"/>
+                <constraint firstAttribute="bottom" secondItem="Rlq-Qm-XwA" secondAttribute="bottom" id="qNd-1K-PTl">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
+                <constraint firstItem="4oT-R3-sS1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="rkd-0z-ExU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4ID-Ls-nEE"/>
+                    <exclude reference="BFC-1R-8kp"/>
+                    <exclude reference="Fri-Sp-OhI"/>
+                    <exclude reference="jJg-ym-mQp"/>
+                    <exclude reference="rkd-0z-ExU"/>
+                    <exclude reference="qNd-1K-PTl"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="4ID-Ls-nEE"/>
+                    <include reference="BFC-1R-8kp"/>
+                    <include reference="Fri-Sp-OhI"/>
+                    <include reference="jJg-ym-mQp"/>
+                    <include reference="rkd-0z-ExU"/>
+                    <include reference="qNd-1K-PTl"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="497" y="457"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launcher_bg" width="1080" height="1920"/>
+        <image name="launcher_pname" width="518" height="72"/>
+        <image name="launcher_text" width="880" height="300"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUR-Ui-0yR">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg" translatesAutoresizingMaskIntoConstraints="NO" id="EC3-Td-X1i">
+                    <rect key="frame" x="100" y="0.0" width="500" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UZv-5x-iPO">
+                    <rect key="frame" x="120" y="0.0" width="480" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iUR-Ui-0yR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3bO-sF-o5p"/>
+                <constraint firstAttribute="bottom" secondItem="iUR-Ui-0yR" secondAttribute="bottom" id="H6k-bl-81Z"/>
+                <constraint firstItem="EC3-Td-X1i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SNa-uK-6im"/>
+                <constraint firstItem="UZv-5x-iPO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="120" id="St9-kN-Iom"/>
+                <constraint firstItem="iUR-Ui-0yR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TRG-EN-AQo"/>
+                <constraint firstAttribute="trailing" secondItem="iUR-Ui-0yR" secondAttribute="trailing" id="Txh-We-F9f"/>
+                <constraint firstAttribute="trailing" secondItem="UZv-5x-iPO" secondAttribute="trailing" id="i9F-Cd-ifj"/>
+                <constraint firstItem="EC3-Td-X1i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="mlG-Dn-oZC"/>
+                <constraint firstAttribute="bottom" secondItem="UZv-5x-iPO" secondAttribute="bottom" id="nxv-RZ-dRh"/>
+                <constraint firstAttribute="trailing" secondItem="EC3-Td-X1i" secondAttribute="trailing" id="q88-ox-aYr"/>
+                <constraint firstAttribute="bottom" secondItem="EC3-Td-X1i" secondAttribute="bottom" id="s3u-SM-Zn8"/>
+                <constraint firstItem="UZv-5x-iPO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t8e-35-Fcd"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="UZv-5x-iPO" id="Cm0-x7-J2r"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu_bg" width="199" height="10"/>
+    </resources>
+</document>
